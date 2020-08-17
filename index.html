@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style = "scroll-behavior: smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href = "./favicon_io/favicon.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Josefin+Slab:wght@600;700&display=swap" rel="stylesheet">    <title>Erica Gates Portfolio Site</title> 
-    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Josefin+Slab:wght@600;700&display=swap" rel="stylesheet">
+    <title>Erica Gates Portfolio Site</title> 
+    <script src="https://kit.fontawesome.com/05263db92c.js" crossorigin="anonymous"></script>
   </head>
-<body style="font-family: 'Josefin Slab'; background-color:#efe958">
-  <div class="container">
-    <nav class="navbar fixed-top navbar-light " style="background-color:#efe958">
+<body style="font-family: 'Josefin Slab'; background-color:#f2fc98">
+  <header>
+    <nav class="navbar fixed-top shadow" style="background-color:#f2fc98">
       <a class="navbar-brand text-dark" style="font-family: 'Fredericka the Great'" href="#">Erica Gates</a>
           <ul class="nav justify-content-end" >
           <li class="nav-item">
             <a class="nav-link active text-dark" href="#">Home</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link text-dark " href="#work">Work</a>
+            <a class="nav-link text-dark " href="#projects">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-dark" href="#about">About</a>
@@ -27,151 +29,211 @@
         </ul>
 
     </nav>
-  </div>
+  </header>
  
-  <div class="jumbotron jumbotron-fluid mt-5 mb-n5" style = "background-image:url('./images/background3.jpg'); background-position:center center; background-size: cover; height: 100%">
-    <div class="modal-body row" >
+  <div class="jumbotron jumbotron-fluid px-3" style = "background-image:url('./images/background3.jpg'); background-position:center center; background-size: cover; height: 100%; margin-top: 56px; padding-top: 80px; padding-bottom: 80px">
+    <div class="modal-body row align-items-center" >
       <div class="col-md-6 justify-content-md-center" style="text-align: center;">
-        <img class="img-fluid" width = "50%" src = "./images/IMG_6871.png" />
+        <img class="img-fluid" width = "60%" src = "./images/IMG_6871.png" />
       </div>
-      <div class="col-md-6">
-        <h1 class="display-4 text-dark" style="font-family: 'Fredericka the Great'">Hi, I'm Erica</h1>
-        <p class="lead text-dark">I’m a full-stack  developer who loves to build in the digital world after designing and building in the real world in my previous career as a civil engineer.</p>
+      <div class="col-md-6 align-items-center justify-content-around">
+        <h1 class="display-4" style="font-family: 'Fredericka the Great'; color: #000000">Hi, I'm Erica</h1>
+        <p class="lead" style = "color: #000000">I’m a full-stack  developer who loves to build in the digital world after designing and building in the real world in my previous career as a civil engineer.</p>
+        <br/>
+        <a href="#projects" style="color: #546a01; text-decoration:none;"><h4 class = "rounded px-3 py-2" style = " background-color:rgba(255, 253,308, 0.3); border: thin solid #546a01; box-shadow: 5px 10px 8px #546a01; width:fit-content; ">See my work!</h4></a> 
       </div>
     </div>
   </div>
 
-  <div id = "work" class = "mt-5 mb-n5 py-5 px-3" >
-    <h2 style="font-family: 'Fredericka the Great'">Work</h2>
-    <div class="card-deck">
-
-      <div class="card">
-        <img src="./images/placeholder.jpg" class="card-img-top" alt="...">
-        <div class="card-body bg-light">
-          <h5 class="card-title text-center">Placeholder for Capstone Project </h5>
-          <p class="card-text ">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <h6>Technologies: React, Ruby on Rails, PostgreSQL </h6>
-          <a href="https://github.com/ericagates" class="btn btn-primary" target="_blank" style = "background-color:#546a01; border-color:#546a01 ">See GitHub Repo</a>    </div>
-      </div>
-      
-      <div class="card">
-        <div id="carouselExampleControls" class="carousel slide" data-interval="false">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100 card-img-top" src="./images/android2.jpg" alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="./images/campsite-locator.jpg" alt="Second slide">
-            </div>
+  <div id = "projects" class = "mt-5 px-3 pb-3" style ="padding-top: 64px">
+      <h2 style="font-family: 'Fredericka the Great'">Projects</h2>
+      <div class="card-deck mx-3">
+        
+        <div class="card">
+          <img src="./images/placeholder.jpg" class="card-img-top" alt="...">
+          <div class="card-body bg-light">
+            <h5 class="card-title text-center">Placeholder for Capstone Project </h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class = "card-text">
+              <span class = "rounded-pill px-2" style = " border: thin solid #546a01; width:fit-content; ">React</span>
+              <span class = "rounded-pill px-2" style = " border: thin solid #546a01; width:fit-content; ">Ruby on Rails</span>
+              <span class = "rounded-pill px-2" style = " border: thin solid #546a01; width:fit-content; ">PostgreSQL</span>
+            </p>
+            <a href="https://github.com/ericagates" class="btn btn-primary my-1" target="_blank" style = "background-color:#546a01; border-color:#546a01 ">GitHub Repo</a>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
         </div>
-
-        <div class="card-body bg-light">
-          <h5 class="card-title text-center">Campsite Locator <br/>Android App</h5>
-          <p class="card-text">
-          Designed and Developed an app with CRUD functionality for Android. Worked with APIs to connect to 3rd party platforms such as Facebook and Google Maps.
-          </p>
-          <h6>Technologies: Java, Android Studio, SQLite, XML </h6>
-          <a href="https://github.com/ericagates/campsite-locator-app" class="btn btn-primary" target="_blank" style = "background-color:#546a01; border-color:#546a01 ">See GitHub Repo</a>
-        </div>
-      </div>
-      
-      <div class="card">
-        <img src="./images/raspberry-pi.jpg" class="card-img-top" alt="...">
-        <div class="card-body bg-light">
-          <h5 class="card-title text-center" >Raspberry Pi Weather Station</h5>
-          <p class="card-text"> Configured and developed a weather reporting system that gathers and stores information for future usage using a GrovePi HAT with light sensors, temperature and humidity sensors, and LED lights. Data was displayed to an LCD screen and recorded in a JSON file. </p>
-          <h6>Technologies used: RaspberryPi, GrovePi, Python, Raspbian</h6>
           
-          <a href="https://github.com/ericagates/weather-station" class="btn btn-primary" target="_blank" style = "background-color:#546a01; border-color:#546a01 ">See GitHub Repo</a>
-        </div>
-      </div>
-    </div>
-  </div>
+        <div class="card">
+          <div id="carouselExampleControls" class="carousel slide" data-interval="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100 card-img-top" src="./images/android2.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./images/campsite-locator.jpg" alt="Second slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          
+          <div class="card-body bg-light">
+            <h5 class="card-title text-center">Campsite Locator <br/>Android App</h5>
+            <p class="card-text">
+              Designed and Developed an app with CRUD functionality for Android. Worked with APIs to connect to 3rd party platforms such as Facebook and Google Maps.
+            </p>
 
-  <div id = "about" class = "mt-5 mb-n5 py-5 px-3"  style = "background-image:url('./images/background5.jpg'); background-position:center center; background-size: cover;">
+            <p class = "card-text">
+              <span class = "rounded-pill px-2" style = " border: thin solid #546a01; width:fit-content; ">Java</span>
+              <span class = "rounded-pill px-2" style = " border: thin solid #546a01; width:fit-content; ">SQLite</span>
+              <span class = "rounded-pill px-2" style = " border: thin solid #546a01; width:fit-content; ">Android Studio</span>
+            </p>
+            <a href="https://github.com/ericagates/campsite-locator-app" class="btn btn-primary" target="_blank" style = "background-color:#546a01; border-color:#546a01 ">GitHub Repo</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <img src="./images/raspberry-pi.jpg" class="card-img-top" alt="...">
+          <div class="card-body bg-light">
+            <h5 class="card-title text-center" >Raspberry Pi Weather Station</h5>
+            <p class="card-text"> Configured and developed a weather reporting system that gathers and stores information for future usage using a GrovePi HAT with light sensors, temperature and humidity sensors, and LED lights. Data was displayed to an LCD screen and recorded in a JSON file. </p>
+
+            <p class = "card-text">
+              <span class = "rounded-pill px-2" style = " border: thin solid #546a01; width:fit-content; ">RaspberryPi</span>
+              <span class = "rounded-pill px-2" style = " border: thin solid #546a01; width:fit-content; ">GrovePi</span>
+              <span class = "rounded-pill px-2" style = " border: thin solid #546a01; width:fit-content; ">Python</span>
+              <span class = "rounded-pill px-2" style = " border: thin solid #546a01; width:fit-content; ">Raspbian</span>
+            </p>
+            
+            <a href="https://github.com/ericagates/weather-station" class="btn btn-primary" target="_blank" style = "background-color:#546a01; border-color:#546a01 ">GitHub Repo</a>
+          </div>
+        </div>
+        
+      </div>
+    
+  </div>
+      
+  <div id = "about" class = "mt-5 px-3 pb-3"  style = "background-image:url('./images/background5.jpg'); background-position:center center; background-size: cover; padding-top: 64px">
     <h2 style="font-family: 'Fredericka the Great'">About</h2>
-    <div class = "container">
-      <div class="row">
-        <div class="col">
+      <div class="row mx-3 ">
+        <div class="col px-3 py-3 mr-3 mb-5 rounded" style= "background-color:rgba(255, 253,308, 0.7); box-shadow: 5px 10px 8px #546a01">
+          <h4 class= "text-center">
+            <i class="fas fa-map-marker-alt fa-1x"></i><br/>San Diego, CA
+          </h4>
           <p>In addition to being a recent computer science graduate, I'm currently attending LEARN Academy, a full-stack web development bootcamp in San Diego, CA. I’m passionate about helping the military community and hope that my technical skills and engineering background can contribute to projects that help benefit military families and veterans. I've learned to code in many different languages but Ruby on Rails is my favorite. I’d love to bring my diverse experience to your company in an internship or full-time capacity and I look forward to connecting with you!</p> 
           <h4>
             <strong>
-              <a href="https://www.linkedin.com/in/erica-gates/" target ="_blank" style="color:#546a01">View my resume</a>           
+              <a href="https://www.linkedin.com/in/erica-gates/" class = "btn btn-primary" target ="_blank" style = "background-color:#546a01; border-color:#546a01 ">View My Resume</a>           
             </strong>
           </h4>
         </div>
-        <div class="col">
-          <h5>Languages</h5>
-          <div class="row row-cols-3 text-center">
-            <div class="col"><img src="./images/ruby.png"/><br/>Ruby</div>
-            <div class="col"><img src="./images/java.png"/><br/>Java</div>
-            <div class="col"><i class="fab fa-python fa-3x"></i><br/>Python</div> 
-            <div class="col"><i class="fab fa-html5 fa-3x"></i><br/>HTML</div>
-            <div class="col"><i class="fab fa-css3 fa-3x"></i><br/>CSS</div>
-            <div class="col"><i class="fab fa-js fa-3x"></i><br/>JavaScript</div>  
+        <div class="col px-3 py-3 ml-3 mb-5 rounded" style= "background-color:rgba(255, 253,308, 0.7); box-shadow: 5px 10px 8px #546a01">
+          <h5><strong>Languages</strong></h5>
+          <div class="row text-center py-2">
+            <div class="col text-center">
+              <img width = "30%" src = "./images/ruby.png" /><br/>Ruby
+            </div>
             
+            <div class="col text-center">
+              <i class="fab fa-java fa-2x"></i><br/>Java
+            </div>
+           
+            <div class="col text-center">
+              <i class="fab fa-python fa-2x"></i><br/>Python
+            </div> 
+          </div>
+          <div class="row text-center py-2">
+            <div class="col text-center">
+              <i class="fab fa-html5 fa-2x"></i><br/>HTML
+            </div>
+
+            <div class="col text-center">
+              <i class="fab fa-css3 fa-2x"></i><br/>CSS
+            </div>
+
+            <div class="col text-center">
+              <i class="fab fa-js fa-2x"></i><br/>JavaScript
+            </div>  
+          </div>
+
+          <br/>
+          
+          <h5><strong>Frameworks</strong></h5>
+          <div class="row text-center py-2">
+            <div class="col">
+              <img width = "25%" src = "./images/rails.png" /><br/>Ruby on Rails
+            </div>
+            <div class="col">
+              <i class="fab fa-react fa-2x"></i><br/>React
+
+            </div>
+            <div class="col">
+              <i class="fab fa-android fa-2x"></i><br/>Android SDK
+
+            </div>
           </div>
           <br/>
-          <h5>Frameworks</h5>
-          <div class="row row-cols-3 text-center">
-            <div class="col">Ruby on Rails</div>
-            <div class="col">React</div>
-            <div class="col">Android SDK</i></div>
-          </div>
-          <br/>
-          <h5>Databases</h5>
-          <div class="row row-cols-3 text-center">
-            <div class="col">PostgreSQL</div>
-            <div class="col">MySQL</div>
-            <div class="col">MongoDB</i></div>
+          <h5><strong>Databases</strong></h5>
+          <div class="row text-center py-2">
+            <div class="col">
+              <img width = "25%" src = "./images/postgres.png" /><br/>PostgreSQL
+            </div>
+            <div class="col">
+              <img width = "30%" src = "./images/mysql.png" /><br/>MySQL
+            </div>
+            <div class="col">
+              <img width = "30%" src = "./images/mongodb.png" /><br/>MongoDB
+            </div>
           </div>
         </div>
       </div>
-    </div>
   </div>
 
-  <div id = "contact" class = "mt-5 mb-n5 py-5 px-3"  >
+  <div id = "contact" class = "px-3 bg-light" style ="padding-top: 64px; padding-bottom: 64px;" >
     <h2 style="font-family: 'Fredericka the Great'">Contact</h2>
-    <div class="container">
-      <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-              <h2 class="mt-0">Let's Get In Touch!</h2>
-              <hr class="divider my-4" />
-              <p class="mb-5">Looking to hire a developer? Give me a call or send me an email and I'll get back to you as soon as possible!</p>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-              <i class="fas fa-phone fa-3x mb-3 text-dark"></i>
-              <div style="color:#546a01">(619)738-0344</div>
-          </div>
-          <div class="col-lg-4 mr-auto text-center">
-              <i class="fas fa-envelope fa-3x mb-3 text-dark"></i>
-              <!-- Make sure to change the email address in BOTH the anchor text and the link target below!-->
-              <a class="d-block" href="mailto:ericajoangates@gmail.com" style="color:#546a01">ericajoangates@gmail.com</a>
-          </div>
-      </div>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+            <h2 class="mt-0">Let's Get In Touch!</h2>
+            <hr class="divider my-4" />
+            <p class="mb-5">Looking to hire a developer? Give me a call or send me an email and I'll get back to you as soon as possible!</p>
+        </div>
     </div>
+    <div class="row">
+        <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+            <i class="fas fa-phone fa-3x mb-3" style="color:#546a01"></i>
+            <div style="color:#546a01">(619)738-0344</div>
+        </div>
+        <div class="col-lg-4 mr-auto text-center">
+            <i class="fas fa-envelope fa-3x mb-3" style="color:#546a01"></i>
+            <!-- Make sure to change the email address in BOTH the anchor text and the link target below!-->
+            <a class="d-block" href="mailto:ericajoangates@gmail.com" style="color:#546a01">ericajoangates@gmail.com</a>
+        </div>
+    </div>
+
   </div>
 
-  <footer class="py-5">
-    <div class="container">
-      <div class="small text-center text-dark">Website made with 💚and Bootstrap 
-        by Erica Gates</div>
-      <div class="float-right center-block">
-        <br />
+  <footer class="px-3 pt-3 pb-2 shadow-lg">
+    <div class="row">
+      <div class= "col-sm"></div>
+
+      <div class="col-sm small py-3 text-center text-dark">Website made with ❤️ and Bootstrap 
+        by Erica Gates
+      </div>
+
+      <div class="col-sm text-right">
+        
         <a href="https://www.linkedin.com/in/erica-gates/" target ="_blank" style="color:#546a01"><i class="fab fa-linkedin fa-3x"></i></a>
         <a href="https://github.com/ericagates" target ="_blank" style="color:#546a01"><i class="fab fa-github-square fa-3x"></i></a>
+        
       </div>
+      
     </div>
   </footer>
 
